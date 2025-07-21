@@ -1,4 +1,3 @@
-import React from 'react';
 import profileImg from '../assets/profile.jpg';
 import resume from '../assets/Tornike Resume.pdf';
 import { Link } from 'react-router-dom';
@@ -27,7 +26,7 @@ const LeftSide = () => {
           <Link to="/projects" aria-label="Go to Projects page">
             <span aria-hidden="true">💻</span> Projects
           </Link>
-          <Link to="/contacts" aria-label="Go to Contacts page">
+          <Link to="/achievements" aria-label="Go to Achievements page">
             <span aria-hidden="true">🏆</span> Achievements
           </Link>
         </nav>

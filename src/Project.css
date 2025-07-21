@@ -1,0 +1,35 @@
+.projects-container {
+  display: flex;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.projects-content {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.contribution-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 20px #118a7e;
+  border: 2px solid #118a7e;
+  text-align: center;
+}
+
+.contribution-graph {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contribution-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
