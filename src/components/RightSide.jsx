@@ -51,13 +51,13 @@ const RightSide = () => {
       <h3 className='contact-heading'>/ Get in Touch </h3>
       <div className='contact-links'>
         <a href='https://www.linkedin.com/in/tornike-alxanishvili-58485b318' target='_blank' rel='noopener noreferrer'>
-          O - LinkedIn
+          👉 LinkedIn
         </a>
         <a href='https://github.com/PinoqioDOM' target='_blank' rel='noopener noreferrer'>
-          O - GitHub
+          👉 GitHub
         </a>
         <a href='*' target='_blank' rel='noopener noreferrer'>
-          O - Gmail : alkhanishvilit@gmail.com
+          👉 Gmail : alkhanishvilit@gmail.com
         </a>
       </div>
     </div>

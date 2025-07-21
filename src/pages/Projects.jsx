@@ -1,8 +1,15 @@
 import React from 'react'
+import LeftSide from '../components/LeftSide'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div>
+      <LeftSide />
+
+      <div>
+        
+      </div>
+    </div>
   )
 }
 
