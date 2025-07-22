@@ -3,7 +3,8 @@ import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import Layout from "./components/Layout"
 import Error from "./pages/Error"
-import Achievements from "./pages/Achievements"
+import Contacts from "./pages/Contacts"
+
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="achievementss" element= {<Achievements />} />
+          <Route path="contacts" element={<Contacts />}/>
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>

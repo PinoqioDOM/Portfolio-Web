@@ -10,6 +10,7 @@ body {
   padding: 1rem;
   overflow-x: hidden;
   overflow-y: auto;
+  height: 100vh;
 }
 
 .home {

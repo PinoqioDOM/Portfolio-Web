@@ -26,8 +26,8 @@ const LeftSide = () => {
           <Link to="/projects" aria-label="Go to Projects page">
             <span aria-hidden="true">💻</span> Projects
           </Link>
-          <Link to="/achievements" aria-label="Go to Achievements page">
-            <span aria-hidden="true">🏆</span> Achievements
+          <Link to="/contacts" aria-label="Go to Contacts page">
+            <span aria-hidden="true">🤖</span> Contacts
           </Link>
         </nav>
 
