@@ -21,6 +21,7 @@ const RightSide = () => {
         <span>- React</span>
         <span>- JavaScript</span>
         <span>- Bootstrap</span>
+        <span>- Redux</span>
         <span>- TailWind CSS</span>
         <span>- TypeScript</span>
         <span>- HTML5</span>
