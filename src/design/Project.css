@@ -163,13 +163,16 @@
   color: #000;
   text-decoration: none;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   font-weight: bold;
   text-align: center;
 }
 
 .project-card-item .project-link:hover {
-  background-color: #00e5ff;
+  box-shadow: 0 0 20px #118a7e;
+  background-color: #ffffff;
+  color: #0a2f2a;
+  font-weight: bold;
 }
 
 .project-card-item .separator-line {

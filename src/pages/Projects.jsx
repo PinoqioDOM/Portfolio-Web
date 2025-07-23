@@ -1,5 +1,5 @@
 import LeftSide from '../components/LeftSide'
-import '../Project.css'
+import '../design/Project.css'
 import ProjectCard from '../components/ProjectCard'
 import { useEffect, useState } from 'react'
 
