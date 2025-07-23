@@ -79,32 +79,53 @@ label {
 textarea.form-control {
     resize: vertical;
     min-height: 100px;
-    font-family: inherit;
 }
 
 .send-btn {
     width: 100%;
     padding: 15px 20px;
-    background: red;
+    background-color: #118a7e;
     color: white;
     border: none;
     border-radius: 12px;
     font-size: 1.2rem;
     font-weight: bold;
-    letter-spacing: 5px;
     cursor: pointer;
     transition: all 0.5s;
     margin-top: 20px;
 }
 
 .send-btn:hover {
-    background: linear-gradient(135deg, #0d6b61, #118a7e);
     transform: translateY(-2px);
     box-shadow: 0 0px 40px white;
+    color: gold;
 }
 
 .send-btn:active {
     transform: translateY(0);
+}
+
+.home-btn {
+  color: #0a2f2a;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+  margin: 1rem;
+  text-align: start;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.home-btn:hover {
+  color: white;
+  box-shadow: 0 0 15px #118a7e;
+  transform: scale(1.05);
+  background-color: #0a2f2a;
+  border: 2px solid white;
 }
 
 @media (max-width: 768px) {

@@ -1,53 +1,62 @@
-import React from 'react'
-import '../design/contacts.css'
-import Swal from 'sweetalert2'
+import React from 'react';
+import '../design/contacts.css';
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 const Contacts = () => {
+  const navigate = useNavigate();
+
   const onSubmit = (e) => {
-    e.preventDefault()
-    const formData = new FormData(e.target)
-    
-    const firstname = formData.get('firstname')
-    const email = formData.get('email')
-    const phone = formData.get('phone')
-    const company = formData.get('company')
-    const description = formData.get('description')
-    
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    const firstname = formData.get('firstname');
+    const email = formData.get('email');
+    const phone = formData.get('phone');
+    const company = formData.get('company');
+    const description = formData.get('description');
+
     if (!firstname || !email || !phone) {
       Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Please fill in all required fields!",
-        footer: '<a href="#">Need help?</a>'
-      })
-      return
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Please fill in all required fields!',
+        footer: '<a href="#">Need help?</a>',
+      });
+      return;
     }
-    
-    console.log({ firstname, email, phone, company, description })
-    
+
+    console.log({ firstname, email, phone, company, description });
+
     Swal.fire({
-      icon: "success",
-      title: "Success!",
-      text: "Your message has been sent successfully!",
-      confirmButtonText: "OK"
-    })
-    
-    e.target.reset()
-  }
+      icon: 'success',
+      title: 'Success!',
+      text: 'Your message has been sent successfully!',
+      confirmButtonText: 'OK',
+    });
+
+    e.target.reset();
+  };
+
+  const handleGoHome = () => {
+    navigate('/');
+  };
 
   return (
-    <div className='contact-form'>
+    <div className="contact-form">
+      <button className="home-btn" onClick={handleGoHome}>Home</button>
+
       <form onSubmit={onSubmit}>
-        <h1 className='form-title'>Get In Touch</h1>
-        
+        <h1 className="form-title">Get In Touch</h1>
+
         <div className="row">
           <div className="input-group">
             <input
               type="text"
               placeholder="What's your name"
-              className='form-control'
-              name='firstname'
-              id='firstname'
+              className="form-control"
+              name="firstname"
+              id="firstname"
               required
             />
             <label htmlFor="firstname">Firstname</label>
@@ -57,9 +66,9 @@ const Contacts = () => {
             <input
               type="email"
               placeholder="What's your email address"
-              className='form-control'
-              name='email'
-              id='email'
+              className="form-control"
+              name="email"
+              id="email"
               required
             />
             <label htmlFor="email">Email</label>
@@ -71,9 +80,9 @@ const Contacts = () => {
             <input
               type="tel"
               placeholder="What's your phone number"
-              className='form-control'
-              name='phone'
-              id='phone'
+              className="form-control"
+              name="phone"
+              id="phone"
               required
             />
             <label htmlFor="phone">Phone Number</label>
@@ -83,9 +92,9 @@ const Contacts = () => {
             <input
               type="text"
               placeholder="What's your company name"
-              className='form-control'
-              name='company'
-              id='company'
+              className="form-control"
+              name="company"
+              id="company"
             />
             <label htmlFor="company">Company Name</label>
           </div>
@@ -94,18 +103,20 @@ const Contacts = () => {
         <div className="input-group">
           <textarea
             placeholder="What's your contact reason"
-            className='form-control'
-            name='description'
-            id='description'
+            className="form-control"
+            name="description"
+            id="description"
             rows="4"
           ></textarea>
           <label htmlFor="description">Description</label>
         </div>
 
-        <button className="send-btn" type='submit'>Send</button>
+        <button className="send-btn" type="submit">
+          Send
+        </button>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default Contacts
+export default Contacts;

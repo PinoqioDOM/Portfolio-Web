@@ -27,6 +27,7 @@ const RightSide = () => {
         <span>- HTML5</span>
         <span>- CSS3</span>
         <span>- GitHub</span>
+        <span>- Redux</span>
       </p>
     </div>,
     <div className='education-box' key="education">
