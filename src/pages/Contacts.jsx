@@ -7,7 +7,7 @@ import VideoComponent from '../components/VideoComponent';
 const Contacts = () => {
   const navigate = useNavigate();
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
 
@@ -27,16 +27,36 @@ const Contacts = () => {
       return;
     }
 
-    console.log({ firstname, email, phone, company, description });
+    try {
+      const response = await fetch('https://formspree.io/f/xrblpvey', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
 
-    Swal.fire({
-      icon: 'success',
-      title: 'Success!',
-      text: 'Your message has been sent successfully!',
-      confirmButtonText: 'OK',
-    });
-
-    e.target.reset();
+      if (response.ok) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Success!',
+          text: 'Your message has been sent successfully!',
+        });
+        e.target.reset();
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Something went wrong while sending your message!',
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: 'Network error or server problem!',
+      });
+    }
   };
 
   const handleGoHome = () => {
