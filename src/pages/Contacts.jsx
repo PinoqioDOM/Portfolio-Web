@@ -2,6 +2,7 @@ import React from 'react';
 import '../design/contacts.css';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
+import VideoComponent from '../components/VideoComponent';
 
 const Contacts = () => {
   const navigate = useNavigate();
@@ -44,6 +45,7 @@ const Contacts = () => {
 
   return (
     <div className="contact-form">
+      <VideoComponent />
       <button className="home-btn" onClick={handleGoHome}>Home</button>
 
       <form onSubmit={onSubmit}>
