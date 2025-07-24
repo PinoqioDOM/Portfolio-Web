@@ -34,6 +34,8 @@ body {
   box-shadow: 0 0 10px #118a7e;
   background-color: #0a2f2a;
   color: #e0f7f9;
+  animation: fadeSlideIn 1s ease-out forwards;
+  opacity: 0;
 }
 
 .profile-box {
@@ -42,6 +44,8 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  animation: fadeSlideInLeft 1s ease-out forwards;
+  opacity: 0;
 }
 
 .profile-img {
@@ -226,6 +230,28 @@ body {
   to { width: 100%; }
 }
 
+@keyframes fadeSlideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 768px) {
   .home {
     flex-direction: column;
@@ -233,12 +259,76 @@ body {
 
   .profile-section {
     max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #118a7e;
   }
 
-  .rightside-section {
+  .profile-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     height: auto;
-    padding: 1rem;
+    animation: fadeSlideInLeft 1s ease-out forwards;
+    opacity: 0;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #118a7e;
+  }
+
+  .profile-info h3,
+  .profile-info small {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .download-btn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-bar {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  .nav-bar a {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+
+  .profile-box p {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-top: 1px solid #118a7e;
+    margin-top: auto;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-links a {
+    display: flex;
+    flex-direction: column;
   }
 }
