@@ -18,6 +18,15 @@ body {
   flex-direction: column;
 }
 
+.nav-bar .active {
+  background-color: white;
+  color: #0a2f2a;
+  box-shadow: 0 0 10px #118a7e;
+  transform: scale(1.0);
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+}
+
 .home {
   display: flex;
   align-items: stretch;
@@ -110,7 +119,7 @@ body {
   background-color: white;
   color: #0a2f2a;
   box-shadow: 0 0 15px #118a7e;
-  transform: scale(1.05);
+  transform: scale(1.0);
 }
 
 .profile-box p {

@@ -1,6 +1,6 @@
 import profileImg from '../assets/profile.jpg';
 import resume from '../assets/Tornike Resume.pdf';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'; // შეცვალე Link-ის იმპორტი NavLink-ით
 
 const LeftSide = () => {
   return (
@@ -20,15 +20,15 @@ const LeftSide = () => {
         </div>
 
         <nav className='nav-bar' aria-label="Main navigation">
-          <Link to="/" aria-label="Go to Home page">
+          <NavLink to="/" aria-label="Go to Home page">
             <span aria-hidden="true">🏡</span> Home
-          </Link>
-          <Link to="/projects" aria-label="Go to Projects page">
+          </NavLink>
+          <NavLink to="/projects" aria-label="Go to Projects page">
             <span aria-hidden="true">💻</span> Projects
-          </Link>
-          <Link to="/contacts" aria-label="Go to Contacts page">
+          </NavLink>
+          <NavLink to="/contacts" aria-label="Go to Contacts page">
             <span aria-hidden="true">🤖</span> Contacts
-          </Link>
+          </NavLink>
         </nav>
 
         <p className='info-p'>
