@@ -103,6 +103,7 @@ textarea.form-control {
   border-radius: 12px;
   font-size: 1.2rem;
   font-weight: bold;
+  letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.5s;
   margin-top: 20px;
@@ -225,6 +226,7 @@ textarea.form-control {
     right: 10px;
     border: 2px solid #0a2f2a;
     background-color: #ffffff;
+    color:#0a2f2a;
   }
 
   .home-btn:hover {
@@ -265,6 +267,11 @@ textarea.form-control {
     font-size: 12px;
     text-align: center;
   }
+
+  .input-group {
+    background-color: #ffffff;
+    border-radius: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -291,5 +298,10 @@ textarea.form-control {
     font-size: 11px;
     padding: 6px 10px;
     border-radius: 14px;
+  }
+
+  .input-group {
+    background-color: #ffffff;
+    border-radius: 12px;
   }
 }
