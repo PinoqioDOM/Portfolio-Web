@@ -1,8 +1,14 @@
-import React from 'react'
+import '../design/error.css'
+import VideoComponent from '../components/VideoComponent'
 
 const Error = () => {
   return (
-    <div>Error</div>
+    <div>
+      <div className="error-page">
+        <VideoComponent />
+        <h1 className='error-text'>404 - Page Not Found</h1>
+      </div>
+    </div>
   )
 }
 

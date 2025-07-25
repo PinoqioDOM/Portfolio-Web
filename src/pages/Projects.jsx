@@ -18,7 +18,6 @@ const Projects = () => {
 
       <div className={`projects-content ${isVisible ? 'animate-right' : ''}`}>
         <div>
-          
           <div className={`contribution-section ${isVisible ? 'animate-right-delay-1' : ''}`}>
             <a href='https://github.com/PinoqioDOM' className="contribution-graph">
               <img
@@ -32,7 +31,6 @@ const Projects = () => {
           <div className={`projects ${isVisible ? 'animate-right-delay-2' : ''}`}>
             <ProjectCard />
           </div>
-
         </div>
       </div>
     </div>

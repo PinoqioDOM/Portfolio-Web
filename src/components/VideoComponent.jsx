@@ -1,4 +1,3 @@
-import React from 'react'
 import MyVideo from '../assets/Matrix.mp4'
 
 const VideoComponent = () => {
