@@ -1,6 +1,6 @@
 import profileImg from '../assets/profile.jpg';
 import resume from '../assets/Tornike Resume.pdf';
-import { NavLink } from 'react-router-dom'; // შეცვალე Link-ის იმპორტი NavLink-ით
+import { NavLink } from 'react-router-dom'; 
 
 const LeftSide = () => {
   return (
